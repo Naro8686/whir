@@ -25,7 +25,7 @@
                             <div class="form-boxes">
                                 <h2>Sign in or Sign Up</h2>
                                 <p>
-                                    <strong>First-time user?</strong> Provide the bitcoin address we send the
+                                    <strong>First-time user?</strong> Provide the BTC address we send the
                                     commision to and the password to sign up for affiliate program. </p>
                                 <p>
                                     <strong>Existing user?</strong> Fill in your credentials to sign in. </p>

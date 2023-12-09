@@ -17,7 +17,7 @@
                                     <input id="address_x1" name="address" type="text" autofocus="" placeholder=" "
                                            value="{{$address}}"
                                            autocomplete="off">
-                                    <label for="address_x1">BITCOIN ADDRESS FOR COMMISSION PAYOUT</label>
+                                    <label for="address_x1">BTC ADDRESS FOR COMMISSION PAYOUT</label>
                                 </div>
                             </div>
                         </div>

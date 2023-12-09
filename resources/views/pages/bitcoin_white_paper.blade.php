@@ -23,7 +23,7 @@
 
                     <div class="center content-button">
                         <a class="btn btn-primary" href="{{route('tx.new-mix')}}" data-modal="modal-btc-mixer"><span
-                                class="md-show">GET STARTED NOW - </span>MIX BITCOINS</a>
+                                class="md-show">GET STARTED NOW - </span>MIX BTC</a>
                     </div>
 
                 </div>

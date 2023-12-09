@@ -43,12 +43,12 @@
                 <div class="box-sm-3">
                     <div class="sm-start center">
                         <img src="/assets/web/images/content-2-xs.png" width="280px" class="pixelated box-img"
-                             alt="Isn’t bitcoin anonymous" title="Isn’t bitcoin anonymous">
+                             alt="Isn’t BTC anonymous" title="Isn’t BTC anonymous">
                     </div>
                 </div>
 
                 <div class="box-sm-7">
-                    <h2>But wait... isn’t bitcoin <u>anonymous</u>?</h2>
+                    <h2>But wait... isn’t BTC <u>anonymous</u>?</h2>
                     <div class="boxes">
                         <div class="box-sm-5">
                             <div class="pe-md-4">
@@ -142,7 +142,7 @@
                 <div class="box-md-2-5"></div>
 
                 <div class="box-md-5">
-                    <h3>FAST BITCOIN MIXER</h3>
+                    <h3>FAST BTC MIXER</h3>
                     <p>The speed of a BTC mixer can be an important consideration for users who want to quickly
                         and efficiently obscure the origin of their BTC transactions.</p>
                     <p><strong>Whir BTC mixer offers an instant mixing service, which allows you to receive your
@@ -151,7 +151,7 @@
                     </p>
                     <p>Optionally, to enhance the privacy of the BTC mixing transaction, you can choose a delay
                         in processing your mixing request.</p>
-                    <h3>SECURE BITCOIN MIXER</h3>
+                    <h3>SECURE BTC MIXER</h3>
                     <p>The security of a BTC mixer can vary depending on the specific service being used. Some
                         BTC mixers may have strong security measures in place to protect the privacy of their
                         users, while others may be less secure.</p>
@@ -162,11 +162,11 @@
                         a team of IT and security specialists. <strong>Additionally, to increase the safety and
                             privacy of our users, we never require or log any personal details, such as name, email,
                             or IP address, and delete all transaction details after 24 hours. </strong></p>
-                    <h3>CONVENIENT BITCOIN MIXER</h3>
+                    <h3>CONVENIENT BTC MIXER</h3>
                     <p>The convenience of a BTC mixer can depend on a few factors, such as the user's specific
                         needs and the features and user experience of the mixer service being used.</p>
                     <p>Some users may find BTC mixers to be convenient because they allow them to quickly and
-                        easily obscure the origin of their BTC transactions. Other users may find Bitcoin mixers
+                        easily obscure the origin of their BTC transactions. Other users may find BTC mixers
                         to be inconvenient because they may have limits on the amount of BTC that can be mixed
                         at one time, or because they may require users to go through additional steps to use the
                         service.</p>

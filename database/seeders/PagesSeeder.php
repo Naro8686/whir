@@ -27,7 +27,7 @@ class PagesSeeder extends Seeder
                 "seo_description" => "",
                 "content" => '<p>
                         Please read these Terms of Service. These Terms define the conditions of Whir.to (further
-                        &quot;Whir&quot;) use. Use of the Whir service, visiting the website, and sending bitcoin
+                        &quot;Whir&quot;) use. Use of the Whir service, visiting the website, and sending BTC
                         anonymously signifies your acceptance of and agreement to these Terms. Whir reserves the
                         right to update these Terms at any moment by posting revised terms on the website. Such
                         changes take effect from the date of their posting on the website. </p>
@@ -189,7 +189,7 @@ class PagesSeeder extends Seeder
 
 
                     <p>If considered necessary, a user can voluntarily provide us with a name, e-mail address, and
-                        information on used bitcoin addresses, for example, in solving issues by our <a
+                        information on used BTC addresses, for example, in solving issues by our <a
                             href="#" target="_blank" rel="noopener">help center</a>. This information is
                         not mandatory, and we will collect it only if provided voluntarily.</p>
                     <h2>How do we use collected information (NO-LOGS policy)</h2>
@@ -230,7 +230,7 @@ class PagesSeeder extends Seeder
                         signatures, or via the encrypted Tor network.</p>
                     <h2>Shared use of personal user information</h2>
                     <p>We do not sell, impart, or rent out personal user information to third parties. Please, note
-                        that any transactions in the bitcoin network are publicly available, and we have no
+                        that any transactions in the BTC network are publicly available, and we have no
                         opportunity to exclude those transactions from the blockchain.</p>
                     <h2>Privacy Policy changes</h2>
                     <p>Whir has a right to update this Privacy Policy at its own and sole discretion at any time. We
@@ -632,7 +632,7 @@ class PagesSeeder extends Seeder
                 "seo_description" => "",
                 "content" => "<p>
                         Refer customers and get a % commission from each transaction fee we charge. Join our
-                        affiliate program today, promote privacy, and start earning bitcoin. </p>",
+                        affiliate program today, promote privacy, and start earning BTC. </p>",
             ],
             [
                 "slug" => "/faq",
@@ -925,7 +925,7 @@ class PagesSeeder extends Seeder
 
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="tab-head-17">
-                                Why should I choose Whir bitcoin mixer? </h3>
+                                Why should I choose Whir BTC mixer? </h3>
                             <div id="tab-17" class="accordion-collapse" aria-labelledby="tab-head-17">
                                 <p>Choosing a BTC mixer depends on a variety of factors, such as the specific
                                     needs of the user, the level of privacy and security they require, and the fees
@@ -933,10 +933,10 @@ class PagesSeeder extends Seeder
                                     limits, while others may prioritize a high level of privacy and security. It is
                                     important to carefully consider your own needs and requirements when choosing a
                                     BTC mixer.<br/><br/>It is also worth noting that while BTC mixers can
-                                    help to obscure the origin of Bitcoin transactions, they do not guarantee
+                                    help to obscure the origin of BTC transactions, they do not guarantee
                                     complete anonymity. It is still possible for law enforcement or other parties to
-                                    trace Bitcoin transactions through other means. Therefore, it is important to be
-                                    cautious when using any Bitcoin mixer, regardless of which one you choose.</p>
+                                    trace BTC transactions through other means. Therefore, it is important to be
+                                    cautious when using any BTC mixer, regardless of which one you choose.</p>
                             </div>
                         </div>
                     </div>',

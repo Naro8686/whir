@@ -7,9 +7,9 @@
                     <div class="line-2"></div>
                 </a>
                 <div class="modal-title">
-                    Send bitcoin privately
+                    Send BTC privately
                 </div>
-                <p>Hide your bitcoin balance and previous transactions from the recipient.</p>
+                <p>Hide your BTC balance and previous transactions from the recipient.</p>
 
                 <form action="{{route('tx.new-mix')}}" id="send-btc-form" method="post">
                     <div class="form-boxes">

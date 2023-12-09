@@ -6,7 +6,7 @@
         Whir is a BTC mixer that returns privacy to your BTC.
     </x-slot>
     <x-slot name="seo_keywords">
-        bitcoin mixer, mix bitcoin, bitcoin privacy
+        BTC mixer, mix BTC, BTC privacy
     </x-slot>
     @php($affiliate = new \App\Models\Affiliate($affiliate->resolve()))
     <div class="container">
@@ -45,7 +45,7 @@
                                             <input type="text" placeholder=" " id="btcAddress"
                                                    value="{{$affiliate->username}}"
                                                    autocomplete="off" readonly="readonly">
-                                            <label for="btcAddress">BITCOIN ADDRESS FOR COMMISSION PAYOUT</label>
+                                            <label for="btcAddress">BTC ADDRESS FOR COMMISSION PAYOUT</label>
                                         </div>
                                     </div>
                                     <a type="button" class="btn btn-xs btn-dark btn-in-input"

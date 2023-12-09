@@ -6,15 +6,15 @@
         Whir is a BTC mixer that returns privacy to your BTC.
     </x-slot>
     <x-slot name="seo_keywords">
-        bitcoin mixer, mix bitcoin, bitcoin privacy
+        BTC mixer, mix BTC, BTC privacy
     </x-slot>
     <div class="container-inner-hero">
         <div class="hero">
             <a class="logo" href="{{url('/')}}">
                 <img class="logo-white" src="{{asset('assets/web/images/logo-white.png')}}"
-                     alt="Whir Bitcoin mixer" title="Whir BTC mixer" width="67px" height="66px">
+                     alt="Whir BTC mixer" title="Whir BTC mixer" width="67px" height="66px">
                 <img class="logo-dark" src="{{asset('assets/web/images/logo-dark.png')}}"
-                     alt="Whir Bitcoin mixer" title="Whir BTC mixer" width="67px" height="66px">
+                     alt="Whir BTC mixer" title="Whir BTC mixer" width="67px" height="66px">
             </a>
             <div class="clear"></div>
 
