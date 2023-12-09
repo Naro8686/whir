@@ -81,7 +81,7 @@ class AffiliateController extends Controller
         ]);
         $data = $validator->validated();
         if ($affiliate->update(['username' => $data['address']])) {
-            Session::flash('message', 'Bitcoin address changed.');
+            Session::flash('message', 'BTC address changed.');
         }
         return response([
             'status' => 'success',

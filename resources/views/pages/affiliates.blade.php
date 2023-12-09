@@ -13,13 +13,11 @@
             <div class="boxes">
 
                 <strong class="over-title"></strong>
-                <h1>Affiliate program</h1>
+                <h1>{{$page->seo_title}}</h1>
 
                 <div class="box-compressed-md">
 
-                    <p>
-                        Refer customers and get a % commission from each transaction fee we charge. Join our
-                        affiliate program today, promote privacy, and start earning bitcoin. </p>
+                    {!! $page->content !!}
 
                     <div class="content-form bg-default">
                         <form action="{{route('affiliates.login')}}" method="post" autocomplete="off">

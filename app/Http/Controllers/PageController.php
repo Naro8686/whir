@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Affiliate;
 use App\Models\Page;
+use DOMDocument;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -29,7 +30,19 @@ class PageController extends Controller
         if ($page = Page::whereSlug($slug)->first()) {
             $view = 'pages.' . str_replace('-', '_', $page->name);
             if (view()->exists($view)) {
-                return view($view, ['page' => $page]);
+                if ($page->name === 'home') {
+                    $faqPage = Page::whereName('faq')->first();
+                    $doc = new DomDocument;
+                    $doc->validateOnParse = false;
+                    $doc->preserveWhiteSpace = false;
+                    $doc->formatOutput = true;
+                    $html = $faqPage->content;
+                    $doc->loadHTML($html);
+                    $id = $doc->getElementById('faq');
+                    $faq = $doc->saveHTML($id);
+                }
+
+                return view($view, ['page' => $page, 'faq' => $faq ?? null]);
             }
         }
         abort(404);

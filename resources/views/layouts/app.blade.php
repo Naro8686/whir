@@ -95,7 +95,7 @@
                             <li>
                                 <a class="btn btn-primary btn-send" href="{{route('tx.new-mix')}}"
                                    data-modal="modal-btc-mixer" href="#"><span class="btc-ico">&#x20BF;</span> Mix
-                                    Bitcoins</a>
+                                    BTC</a>
                             </li>
                         </ul>
                         <a href="javascript:void(0)" class="smartnav-btn sm-hide">
@@ -111,7 +111,7 @@
                             </ul>
                             <div class="smartnav-buttons">
                                 <a class="btn btn-lg btn-primary btn-smart" href="{{route('tx.new-mix')}}"
-                                   data-modal="modal-btc-mixer"><span class="btc-ico">₿</span> Mix Bitcoins</a>
+                                   data-modal="modal-btc-mixer"><span class="btc-ico">₿</span> Mix BTC</a>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -226,7 +226,7 @@
                                         </li>
                                         <li>
                                             <a href="{{url('/bitcoin-white-paper')}}">
-                                                Bitcoin white paper </a>
+                                                BTC white paper </a>
                                         </li>
                                         <li>
                                             <a href="{{url('/affiliates')}}">Affiliates</a>
