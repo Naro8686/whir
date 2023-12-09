@@ -84,7 +84,7 @@
                             </div>
                         </form>
                         <div class="data-group">
-                            <p>By using whir, you agree to our <a href="{{url('/terms')}}" target="_blank">Terms
+                            <p>By using {{strtolower(config('app.name'))}}, you agree to our <a href="{{url('/terms')}}" target="_blank">Terms
                                     of service</a> and <a href="{{url('/privacy-policy')}}" target="_blank">Privacy
                                     policy</a>.<br>
                                 Make sure you are on {{url('/')}}</p>

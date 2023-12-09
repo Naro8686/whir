@@ -230,7 +230,7 @@
                     </figure>
                 </a>
 
-                <a href="https://whir.to/use-cases/sugar-daddies">
+                <a href="#">
                     <figure class="pixelated">
                         <img src="/assets/web/images/face-4-xs.png" alt="BTC mixer for sugar daddies"
                              title="BTC mixer for sugar daddies" height="115px">

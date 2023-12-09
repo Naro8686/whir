@@ -300,7 +300,7 @@
     <div class="bar-cookies-inner">
         <div class="cookies-boxes">
             <div class="box-text">
-                By using whir, you agree to <span class="nowrap"><a class="link-cookies" target="_blank"
+                By using {{strtolower(config('app.name'))}}, you agree to <span class="nowrap"><a class="link-cookies" target="_blank"
                                                                     href="{{url('/privacy-policy')}}">Privacy policy</a></span>.
             </div>
 
