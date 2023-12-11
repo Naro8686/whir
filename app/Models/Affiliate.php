@@ -51,6 +51,7 @@ class Affiliate extends Model
 
     public function referrals(): BelongsToMany
     {
-        return $this->belongsToMany(Transaction::class, Referral::class, 'affiliate_id', 'transaction_id');
+        return $this->belongsToMany(Transaction::class, Referral::class, 'affiliate_id', 'transaction_id')
+            ->withTimestamps();
     }
 }

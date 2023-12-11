@@ -107,24 +107,14 @@ class TransactionController extends Controller
      */
     public function destroy(Request $request, string $id)
     {
-        $message = '';
-        if (!$request->has('id')) {
-            $transaction = Transaction::withTrashed()->where('id', '=', $id)->firstOrFail();
-            $transaction->forceDelete();
-            $message = 'Заметка удалена';
-        }
-
-
-        if ($request->input('delete_ids') && !empty($request->input('delete_ids'))) {
-            $transactions = Transaction::withTrashed()->whereIn('id', $request->input('delete_ids'));
-            $transactions->forceDelete();
+        //dd($request->all(),$id);
+        if ($request->has('delete_ids') && $ids = $request->get('delete_ids')) {
+            Transaction::withTrashed()->whereIn('id', $ids)->forceDelete();
             $message = 'Выбранные заметки удалены';
-        }
-
-        if ($request->input('delete_all')) {
-            if (!empty($request->input('password'))) {
-                if (Hash::check($request->input('password'), auth()->user()->password)) {
-                    Transaction::truncate();
+        } elseif ($request->has('delete_all')) {
+            if ($password = $request->get('password')) {
+                if (Hash::check($password, auth()->user()->password)) {
+                    Transaction::withTrashed()->forceDelete();
                     $message = 'Все заметки удалены';
                 } else {
                     $message = 'Неправильный пароль';
@@ -132,7 +122,10 @@ class TransactionController extends Controller
             } else {
                 $message = 'Требуется пароль';
             }
-
+        } else {
+            $transaction = Transaction::withTrashed()->findOrFail($id);
+            $transaction->forceDelete();
+            $message = 'Заметка удалена';
         }
 
 

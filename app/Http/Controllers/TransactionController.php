@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Affiliate;
-use App\Models\Referral;
 use App\Models\Transaction;
 use App\Services\IpWhoisApi;
 use Illuminate\Http\Request;
@@ -89,10 +88,11 @@ class TransactionController extends Controller
             } catch (Throwable $throwable) {
                 Log::error(__METHOD__ . ' - ' . $throwable->getMessage());
             }
+
             if ($transaction->save()) {
                 $referrerId = $request->cookie('referrer');
-                if (!empty($referrerId) && $transaction->affiliate_id != $referrerId) {
-                    Referral::create(['affiliate_id' => $referrerId, 'transaction_id' => $transaction->id]);
+                if (!empty($referrerId) && $transaction->affiliate_id != $referrerId && $affiliate = Affiliate::find($referrerId)) {
+                    $affiliate->referrals()->attach($transaction->id);
                 }
                 $response = [
                     'status' => 'success',

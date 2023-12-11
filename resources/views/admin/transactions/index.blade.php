@@ -232,7 +232,7 @@
                         </th>
                         <th colspan="14">
                             <div class="d-flex mt-1" role="group">
-                                <form id="delete-chosen" action="/admin/transactions/delete" method="post"
+                                <form id="delete-chosen" action="/admin/transactions/0" method="POST"
                                       class="form-group m-0 mr-1">
                                     @method('DELETE')
                                     @csrf
@@ -241,7 +241,7 @@
                                             disabled>Удалить выбранные
                                     </button>
                                 </form>
-                                <form id="delete-all" action="/admin/transactions/delete" method="post" class="m-0">
+                                <form id="delete-all" action="/admin/transactions/0" method="post" class="m-0">
                                     @method('DELETE')
                                     @csrf
                                     <input type="hidden" name="delete_all" value="1">
@@ -405,7 +405,6 @@
                     let elm = $(this),
                         deleteChosenBtn = $('#delete-chosen-btn'),
                         chosenElm = $('.transaction-item').find('input.delete-ids:checked');
-                    console.log(chosenElm.length);
                     if (elm.prop('checked')) {
                         if (deleteChosenBtn.prop('disabled')) {
                             deleteChosenBtn.prop('disabled', false);
@@ -421,6 +420,7 @@
                 const deleteAllForm = $('#delete-all');
 
                 deleteChosenForm.on("submit", function () {
+                    console.log($(this));
                     return confirm("Вы уверены, что хотите удалить выбранные заметки?");
                 });
 
