@@ -37,7 +37,7 @@ function unique_tx_id(): string
 {
     $transactionId = random_string(16);
     if (\Illuminate\Support\Facades\DB::table('transactions')
-        ->where('id', $transactionId)
+        ->where('tx_id', $transactionId)
         ->whereNull('deleted_at')
         ->exists()) {
         return unique_tx_id();

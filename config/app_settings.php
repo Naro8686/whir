@@ -79,6 +79,23 @@ return [
                 ],
             ]
         ],
+        'proxy' => [
+            'title' => 'Proxy',
+            'icon' => 'fa fa-globe', // (optional)
+
+            'inputs' => [
+                [
+                    'name' => 'proxy_url',
+                    'type' => 'text',
+                    'label' => 'Proxy url',
+                    'class' => 'form-control',
+                    'hint' => 'Для FixedFloat',
+                    'style' => '',
+                    'rules' => 'nullable|min:2',
+                    'value' => env('PROXY_URL'),
+                ],
+            ]
+        ],
         'link' => [
             'title' => 'Ссылки',
             'icon' => 'fa fa-link',
