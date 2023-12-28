@@ -16,9 +16,7 @@ class FixedFloatController extends Controller
     public function __construct()
     {
         $this->middleware(function (Request $request, $next) {
-            $key = $request->header('FIXEDFLOAT_API_KEY');
-            $secret = $request->header('FIXEDFLOAT_API_SECRET');
-            $this->api = new FixedFloatApi($key, $secret);
+            $this->api = new FixedFloatApi(setting('fixedfloat_api_key'), setting('fixedfloat_api_secret'));
             return $next($request);
         });
     }

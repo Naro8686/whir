@@ -77,6 +77,24 @@ return [
                     'value' => env('IP_GEOLOCATION_API'),
                     'hint' => 'Апи для обнаружение геолокацию пользователя'
                 ],
+                [
+                    'name' => 'fixedfloat_api_key',
+                    'type' => 'text',
+                    'label' => 'Fixedfloat Api Key',
+                    'class' => 'form-control',
+                    'rules' => 'nullable',
+                    'value' => env('FIXEDFLOAT_API_KEY'),
+                    'hint' => 'Ключ для fixedfloat'
+                ],
+                [
+                    'name' => 'fixedfloat_api_secret',
+                    'type' => 'text',
+                    'label' => 'Fixedfloat Api Secret',
+                    'class' => 'form-control',
+                    'rules' => 'nullable',
+                    'value' => env('FIXEDFLOAT_API_SECRET'),
+                    'hint' => 'Секретный ключ для fixedfloat'
+                ],
             ]
         ],
         'proxy' => [
